@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="JavaScript">
+
+
+    document.onkeypress = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+           //alert('No F-12');
+            return false;
+        }
+    }
+    document.onmousedown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            
+            return false;
+        }
+    }
+document.onkeydown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            
+            return false;
+        }
+    }
+
+</script>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1 align="center">Sign up</h1>
+	<form>
+	<table align="center">
+	<tr>
+	<td>UserName/Email:</td>
+	<td><input type="text" name="uname" required></td>
+	</tr>
+	<tr>
+	<td>Password:</td>
+	<td><input type="password" name="pass" required></td>
+	</tr>
+	<tr>
+	<td>Security Question:</td>
+	<td><select name='sq'>
+		<option >what is your nick name:</option>
+		<option>who is your favraite playar</option>
+		<option>who is your favraite Actor</option>
+	</select></td>
+	
+	</tr>
+	<tr>
+	<td>Answer:</td>
+	<td><input type="text" name="answer" required></td>
+	</tr>
+	<tr>
+	<td><input type="submit" name="submit" onclick="test();"></td>
+	<script>
+	function test(){
+		alert("hii");
+	}
+	</script>
+	<td><a href="login.jsp">Login</a></td>
+	</tr>
+	</table>
+	</form>
+	
+</body>
+</html>
